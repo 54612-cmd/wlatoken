@@ -5,72 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World LOVE Alliance - $LOVE</title>
     <style>
-        body { 
-            background-color: #1a1a1a; 
-            color: white; 
-            font-family: 'Segoe UI', sans-serif; 
-            text-align: center; 
-            margin: 0; 
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .container { padding: 40px 20px; max-width: 800px; margin: auto; }
-
-        /* MONEDA FLOTANTE */
-        .moneda { 
-            width: 240px; 
-            height: auto; 
-            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.7)); 
-            margin-bottom: 10px;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-
-        h1 { color: #d4af37; font-size: 2.5rem; margin: 10px 0; }
-        .tagline { font-size: 1.3rem; font-style: italic; margin-bottom: 30px; }
-
-        /* SECCIONES */
-        .section {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 25px;
-            margin-bottom: 30px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            text-align: left;
-        }
-
-        .section h2 { color: #d4af37; margin-top: 0; font-size: 1.6rem; text-align: center; }
-
-        /* BOTÓN TELEGRAM */
-        .btn-telegram { 
-            background: #d4af37; 
-            color: black; 
-            padding: 18px 35px; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            display: inline-block; 
-            font-weight: bold; 
-            font-size: 1.2rem; 
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-            margin-bottom: 40px;
-            width: 80%;
-        }
-
-        /* TOKENOMICS GRID */
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World LOVE Alliance - $LOVE</title>
-    <style>
         body { background-color: #1a1a1a; color: white; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 0; line-height: 1.6; }
         .container { padding: 40px 20px; max-width: 800px; margin: auto; }
         .moneda { width: 240px; height: auto; filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.7)); margin-bottom: 10px; animation: float 3s ease-in-out infinite; }
@@ -80,21 +14,17 @@
         .section { background: rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 25px; margin-bottom: 30px; border: 1px solid rgba(212, 175, 55, 0.2); text-align: left; }
         .section h2 { color: #d4af37; margin-top: 0; font-size: 1.6rem; text-align: center; }
         
-        /* BOTÓN TELEGRAM OPTIMIZADO */
-        .btn-container { margin-bottom: 40px; }
-        .btn-telegram { 
-            background: #d4af37; 
-            color: black; 
-            padding: 20px 35px; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            display: inline-block; 
-            font-weight: bold; 
-            font-size: 1.3rem; 
+        /* BOTONES OPTIMIZADOS */
+        .btn-group { display: flex; flex-direction: column; gap: 15px; align-items: center; margin-bottom: 40px; }
+        .btn-main { 
+            background: #d4af37; color: black; padding: 18px; text-decoration: none; 
+            border-radius: 50px; font-weight: bold; font-size: 1.2rem; width: 90%; 
             box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-            width: 85%;
         }
-        .help-text { font-size: 0.85rem; opacity: 0.7; margin-top: 10px; display: block; }
+        .btn-sub { 
+            background: transparent; color: #d4af37; padding: 12px; text-decoration: none; 
+            border: 2px solid #d4af37; border-radius: 50px; font-weight: bold; font-size: 1rem; width: 90%; 
+        }
 
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .item b { color: #d4af37; display: block; font-size: 0.9rem; }
@@ -109,10 +39,10 @@
         <h1>World LOVE Alliance</h1>
         <p class="tagline">In Love We Trust. ❤️🦁</p>
 
-        <!-- BOTÓN PRINCIPAL CON FACILIDADES -->
-        <div class="btn-container">
-            <a href="https://t.me" class="btn-telegram">ENTRAR A LA COMUNIDAD</a>
-            <span class="help-text">¿No tienes Telegram? <a href="https://telegram.org" style="color:#d4af37;">Descárgalo aquí</a> para unirte a la Alianza.</span>
+        <!-- DOS PASOS CLAROS -->
+        <div class="btn-group">
+            <a href="https://t.me/WorldLoveAlliance" class="btn-main">1. ENTRAR AL GRUPO</a>
+            <a href="https://telegram.org" class="btn-sub">2. NO TENGO TELEGRAM (DESCARGAR)</a>
         </div>
 
         <div class="section">
@@ -142,7 +72,7 @@
 
         <footer>
             &copy; 2026 World LOVE Alliance. Todos los derechos reservados.<br>
-            Construido con orgullo desde el móvil para el mundo.
+            Construido con orgullo por un hombre Arlí para el mundo.
         </footer>
     </div>
 
