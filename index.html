@@ -11,40 +11,30 @@
         @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
         h1 { color: #d4af37; font-size: 2.3rem; margin: 10px 0; }
         .tagline { font-size: 1.2rem; font-style: italic; margin-bottom: 30px; color: #d4af37; }
-        
         .section { background: rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 25px; margin-bottom: 30px; border: 1px solid rgba(212, 175, 55, 0.2); text-align: left; }
         .section h2 { color: #d4af37; margin-top: 0; font-size: 1.5rem; text-align: center; text-transform: uppercase; }
-        
         .btn-group { display: flex; flex-direction: column; gap: 15px; align-items: center; margin-bottom: 40px; }
-        .btn-main { 
-            background: #d4af37; color: black; padding: 20px; text-decoration: none; 
-            border-radius: 50px; font-weight: bold; font-size: 1.3rem; width: 90%; 
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
-        }
-        .btn-sub { 
-            background: transparent; color: #aaa; padding: 12px; text-decoration: none; 
-            font-size: 1rem; border: 1px solid #444; border-radius: 50px; width: 90%;
-        }
-
+        .btn-main { background: #d4af37; color: black; padding: 20px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.3rem; width: 90%; box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5); }
+        .btn-sub { background: transparent; color: #aaa; padding: 12px; text-decoration: none; font-size: 1rem; border: 1px solid #444; border-radius: 50px; width: 90%; }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .item b { color: #d4af37; display: block; font-size: 0.85rem; }
         .mission-text { font-size: 1.1rem; line-height: 1.8; font-style: italic; color: #f0f0f0; border-left: 4px solid #d4af37; padding-left: 20px; }
         footer { font-size: 0.8rem; opacity: 0.4; padding: 40px 0; border-top: 1px solid #333; }
-        
         .roadmap-item { margin-bottom: 15px; }
-        .roadmap-item b { color: #d4af37; }
     </style>
 </head>
 <body>
-
     <div class="container">
         <img src="$LOVE.png" alt="World LOVE Alliance Logo" class="moneda">
         <h1>World LOVE Alliance</h1>
         <p class="tagline">"In Love We Trust" ❤️🦁</p>
 
         <div class="btn-group">
-            <a href="tg://resolve?domain=WorldLoveAlliance" class="btn-main">1. ENTRAR AL GRUPO</a>
-            <a href="https://google.com" class="btn-sub">2. DESCARGAR TELEGRAM</a>
+            <!-- BOTÓN 1: ENTRAR AL GRUPO -->
+            <a href="https://t.me" class="btn-main">1. ENTRAR AL GRUPO</a>
+            
+            <!-- BOTÓN 2: DESCARGAR (Directo a la web de apps de Telegram) -->
+            <a href="https://telegram.org" class="btn-sub">2. DESCARGAR TELEGRAM</a>
         </div>
 
         <div class="section">
@@ -64,25 +54,17 @@
             </div>
         </div>
 
-        <!-- AQUÍ ESTÁN LOS TRES PASOS RECUPERADOS -->
         <div class="section">
             <h2>Hoja de Ruta</h2>
-            <div class="roadmap-item">
-                <p>🦁 <b>Fase 1:</b> Construcción de la comunidad global y unión del pueblo ROM (Estado Actual).</p>
-            </div>
-            <div class="roadmap-item">
-                <p>🦁 <b>Fase 2:</b> Despliegue del contrato inteligente en Base y activación del fondo de ayuda social.</p>
-            </div>
-            <div class="roadmap-item">
-                <p>🦁 <b>Fase 3:</b> Listados internacionales y expansión de la Alianza por todo el mundo.</p>
-            </div>
+            <div class="roadmap-item"><p>🦁 <b>Fase 1:</b> Construcción de la comunidad global (Actual).</p></div>
+            <div class="roadmap-item"><p>🦁 <b>Fase 2:</b> Despliegue del contrato y fondo de ayuda social.</p></div>
+            <div class="roadmap-item"><p>🦁 <b>Fase 3:</b> Expansión de la Alianza por todo el mundo.</p></div>
         </div>
 
         <footer>
             &copy; 2026 World LOVE Alliance.<br>
-            Construido con orgullo por un hombre ROM para el mundo entero.
+            La voz de un hombre ROM para el mundo entero.
         </footer>
     </div>
-
 </body>
 </html>
