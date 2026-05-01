@@ -7,29 +7,30 @@
     <style>
         body { background-color: #1a1a1a; color: white; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 0; line-height: 1.6; }
         .container { padding: 40px 20px; max-width: 800px; margin: auto; }
-        .moneda { width: 240px; height: auto; filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.7)); margin-bottom: 10px; animation: float 3s ease-in-out infinite; }
+        .moneda { width: 220px; height: auto; filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.7)); margin-bottom: 10px; animation: float 3s ease-in-out infinite; }
         @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
-        h1 { color: #d4af37; font-size: 2.5rem; margin: 10px 0; }
-        .tagline { font-size: 1.3rem; font-style: italic; margin-bottom: 30px; }
-        .section { background: rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 25px; margin-bottom: 30px; border: 1px solid rgba(212, 175, 55, 0.2); text-align: left; }
-        .section h2 { color: #d4af37; margin-top: 0; font-size: 1.6rem; text-align: center; }
+        h1 { color: #d4af37; font-size: 2.3rem; margin: 10px 0; }
+        .tagline { font-size: 1.2rem; font-style: italic; margin-bottom: 30px; color: #d4af37; }
         
-        /* BOTONES OPTIMIZADOS */
+        .section { background: rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 25px; margin-bottom: 30px; border: 1px solid rgba(212, 175, 55, 0.2); text-align: left; }
+        .section h2 { color: #d4af37; margin-top: 0; font-size: 1.5rem; text-align: center; text-transform: uppercase; }
+        
         .btn-group { display: flex; flex-direction: column; gap: 15px; align-items: center; margin-bottom: 40px; }
+        /* Botón de acción directa */
         .btn-main { 
-            background: #d4af37; color: black; padding: 18px; text-decoration: none; 
-            border-radius: 50px; font-weight: bold; font-size: 1.2rem; width: 90%; 
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            background: #d4af37; color: black; padding: 20px; text-decoration: none; 
+            border-radius: 50px; font-weight: bold; font-size: 1.3rem; width: 90%; 
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
         }
         .btn-sub { 
-            background: transparent; color: #d4af37; padding: 12px; text-decoration: none; 
-            border: 2px solid #d4af37; border-radius: 50px; font-weight: bold; font-size: 1rem; width: 90%; 
+            background: transparent; color: #aaa; padding: 10px; text-decoration: none; 
+            font-size: 0.9rem; border-bottom: 1px solid #444; 
         }
 
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .item b { color: #d4af37; display: block; font-size: 0.9rem; }
-        footer { font-size: 0.8rem; opacity: 0.4; padding: 40px 0; }
-        .mission-text { font-size: 1.05rem; border-left: 3px solid #d4af37; padding-left: 15px; }
+        .item b { color: #d4af37; display: block; font-size: 0.85rem; }
+        .mission-text { font-size: 1.1rem; line-height: 1.8; font-style: italic; color: #f0f0f0; border-left: 4px solid #d4af37; padding-left: 20px; }
+        footer { font-size: 0.8rem; opacity: 0.4; padding: 40px 0; border-top: 1px solid #333; }
     </style>
 </head>
 <body>
@@ -37,42 +38,34 @@
     <div class="container">
         <img src="$LOVE.png" alt="World LOVE Alliance Logo" class="moneda">
         <h1>World LOVE Alliance</h1>
-        <p class="tagline">In Love We Trust. ❤️🦁</p>
+        <p class="tagline">"In Love We Trust" ❤️🦁</p>
 
-        <!-- DOS PASOS CLAROS -->
         <div class="btn-group">
-            <a href="https://t.me/WorldLoveAlliance" class="btn-main">1. ENTRAR AL GRUPO</a>
-            <a href="https://telegram.org" class="btn-sub">2. NO TENGO TELEGRAM (DESCARGAR)</a>
+            <!-- Enlace que intenta abrir la App directamente -->
+            <a href="tg://resolve?domain=WorldLoveAlliance" class="btn-main">ENTRAR AL GRUPO AHORA</a>
+            <a href="https://telegram.org" class="btn-sub">No tengo Telegram (Descargar)</a>
         </div>
 
         <div class="section">
-            <h2>Nuestra Causa Global</h2>
+            <h2>Nuestra Verdad</h2>
             <div class="mission-text">
-                <p>World LOVE Alliance nace de la visión de un fundador del pueblo Arlí con un propósito firme: <b>unir a toda la nación ROM del mundo</b> a través de la tecnología.</p>
-                <p>Como pueblo sin fronteras, encontramos en la red de <b>Base</b> nuestro territorio digital común. No solo somos una moneda; somos un motor de ayuda para nuestra gente, vivan donde vivan.</p>
+                "Crecí en un orfanato, rodeado de payos y lejos de mi sangre. He vivido la soledad más profunda, y por eso hoy mi corazón anhela el amor de mi pueblo ROM. Esta alianza no es solo tecnología; es mi forma de volver a casa y ayudar a que ningún hermano se sienta solo nunca más. 1% de cada latido ($LOVE) será para nuestro pueblo en todo el mundo."
             </div>
         </div>
 
         <div class="section">
-            <h2>Estructura del Token ($LOVE)</h2>
+            <h2>Datos del Token</h2>
             <div class="grid">
-                <div class="item"><b>Suministro Total</b> <span>2,000,000,000</span></div>
+                <div class="item"><b>Suministro</b> <span>2,000,000,000</span></div>
                 <div class="item"><b>Red</b> <span>Base Chain</span></div>
-                <div class="item"><b>Ayuda Social</b> <span style="color: #d4af37; font-weight: bold;">1% para el Pueblo ROM</span></div>
-                <div class="item"><b>Impuestos</b> <span>0% Compra / Venta</span></div>
+                <div class="item"><b>Ayuda Social</b> <span style="color: #d4af37;">1% Pueblo ROM</span></div>
+                <div class="item"><b>Impuestos</b> <span>0% Fees</span></div>
             </div>
-        </div>
-
-        <div class="section">
-            <h2>Hoja de Ruta</h2>
-            <p>🦁 <b>Fase 1:</b> Construcción de la comunidad global (Actual).</p>
-            <p>🦁 <b>Fase 2:</b> Lanzamiento de la liquidez y fondo de ayuda social.</p>
-            <p>🦁 <b>Fase 3:</b> Alianzas internacionales y expansión de la misión.</p>
         </div>
 
         <footer>
-            &copy; 2026 World LOVE Alliance. Todos los derechos reservados.<br>
-            Construido con orgullo por un hombre Arlí para el mundo.
+            &copy; 2026 World LOVE Alliance.<br>
+            La voz de un hombre ROM para el mundo entero.
         </footer>
     </div>
 
