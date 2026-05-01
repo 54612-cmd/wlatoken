@@ -5,25 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World LOVE Alliance - $LOVE</title>
     <style>
-        body { background-color: #1a1a1a; color: white; font-family: 'Segoe UI', sans-serif; text-align: center; padding: 40px 20px; margin: 0; }
-        .moneda { 
-            width: 260px; 
-            height: auto; 
-            /* Esto hace que el brillo siga el círculo de la moneda y no el cuadro */
-            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.7)); 
-            margin-bottom: 20px;
+        /* CONFIGURACIÓN GENERAL */
+        body { 
+            background-color: #1a1a1a; 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 0;
+            line-height: 1.6;
         }
-        h1 { color: #d4af37; font-size: 2.2rem; margin: 10px 0; }
-        p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 10px auto; }
-        .btn { background: #d4af37; color: black; padding: 16px 32px; text-decoration: none; border-radius: 50px; display: inline-block; margin-top: 25px; font-weight: bold; font-size: 1.1rem; }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container { padding: 40px 20px; max-width: 800px; margin: auto; }
+
+        /* LOGO DE LA MONEDA */
+        .moneda { 
+            width: 240px; 
+            height: auto; 
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.7)); 
+            margin-bottom: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* TÍTULOS Y TEXTO */
+        h1 { color: #d4af37; font-size: 2.4rem; margin: 10px 0; font-weight: bold; }
+        .tagline { font-size: 1.3rem; color: #ffffff; margin-bottom: 20px; font-style: italic; }
+        .description { font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; padding: 0 10px; }
+
+        /* BOTÓN TELEGRAM (EL QUE YA TIENES) */
+        .btn-telegram { 
+            background: #d4af37; 
+            color: black; 
+            padding: 18px 35px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            display: inline-block; 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            margin-bottom: 50px;
+        }
+
+        /* SECCIONES EXTRA (TOKENOMICS Y ROADMAP) */
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .section h2 { color: #d4af37; margin-top: 0; font-size: 1.5rem; text-transform: uppercase; }
+
+        .token-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .token-item b { color: #d4af37; display: block; font-size: 0.9rem; }
+        .token-item span { font-size: 1.1rem; }
+
+        .roadmap-list { text-align: left; padding-left: 20px; }
+        .roadmap-list li { margin-bottom: 15px; list-style-type: "🦁 "; }
+
+        footer { font-size: 0.9rem; opacity: 0.5; padding: 40px 0; }
+
     </style>
 </head>
 <body>
-    <!-- Importante: asegúrate de que el nombre del archivo sea exacto -->
-    <img src="$LOVE.png" alt="World LOVE Alliance Logo" class="moneda">
-    <h1>World LOVE Alliance</h1>
-    <p>In Love We Trust. ❤️🦁</p>
-    <p>El primer activo comunitario nacido para unir corazones en la red de <strong>Base</strong>.</p>
-    <a href="https://t.me" class="btn">Únete a la Alianza en Telegram</a>
+
+    <div class="container">
+        <!-- CABECERA -->
+        <img src="$LOVE.png" alt="World LOVE Alliance Logo" class="moneda">
+        <h1>World LOVE Alliance</h1>
+        <p class="tagline">In Love We Trust. ❤️🦁</p>
+        
+        <p class="description">
+            Estamos construyendo la alianza global más fuerte en la red de <b>Base</b>. 
+            Un proyecto diseñado por y para la comunidad, donde la confianza es nuestro mayor activo.
+        </p>
+
+        <!-- BOTÓN PRINCIPAL -->
+        <a href="https://t.me" class="btn-telegram">Únete a la Alianza en Telegram</a>
+
+        <!-- SECCIÓN TOKENOMICS -->
+        <div class="section">
+            <h2>Detalles del Token</h2>
+            <div class="token-grid">
+                <div class="token-item"><b>Símbolo</b> <span>$LOVE</span></div>
+                <div class="token-item"><b>Red</b> <span>Base (L2)</span></div>
+                <div class="token-item"><b>Suministro</b> <span>2,000,000,000</span></div>
+                <div class="token-item"><b>Impuestos</b> <span>0% Compra / Venta</span></div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN ROADMAP -->
+        <div class="section">
+            <h2>Nuestra Hoja de Ruta</h2>
+            <ul class="roadmap-list">
+                <li><b>Fase 1:</b> Creación de la comunidad y lanzamiento de la web oficial. (Actual)</li>
+                <li><b>Fase 2:</b> Despliegue del contrato inteligente y liquidez en Uniswap.</li>
+                <li><b>Fase 3:</b> Listado en CoinGecko/CoinMarketCap y expansión de la Alianza.</li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2024 World LOVE Alliance. Todos los derechos reservados.
+        </footer>
+    </div>
+
 </body>
 </html>
+
