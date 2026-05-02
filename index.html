@@ -32,6 +32,11 @@
         }
         .btn-zora:hover { transform: scale(1.05); background: #d4af37; color: #000; }
 
+        /* QR SECCIÓN */
+        .qr-section { margin: 40px 0; padding: 30px; background: #1a1a1a; border-radius: 20px; border: 1px dashed #d4af37; }
+        .qr-code { width: 180px; height: 180px; background: white; margin: 0 auto 20px; padding: 10px; border-radius: 10px; }
+        .contract-address { word-break: break-all; font-family: monospace; font-size: 0.8rem; color: #d4af37; background: #000; padding: 10px; border-radius: 5px; }
+
         .manifesto {
             background: linear-gradient(145deg, #1a1a1a, #101010);
             border-radius: 30px;
@@ -47,7 +52,6 @@
         .manifesto-text { font-size: 1.15rem; color: #ffffff; text-align: justify; font-style: italic; font-weight: 300; }
         .manifesto-signature { margin-top: 30px; text-align: right; color: #d4af37; font-weight: bold; font-size: 1.2rem; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 15px; }
 
-        /* ESTRATEGIA DE FINANCIACIÓN */
         .strategy { text-align: left; margin-bottom: 50px; padding: 0 10px; }
         .strategy h2 { color: #d4af37; font-size: 1.6rem; text-align: center; text-transform: uppercase; margin-bottom: 30px; }
         .step { margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px; }
@@ -76,14 +80,21 @@
         <h1>World LOVE Alliance</h1>
         <p class="tagline">In Love We Trust</p>
 
-        <!-- SECCIÓN DE APOYO AL NFT PARA LIQUIDEZ -->
+        <!-- SECCIÓN DE APOYO CON EL NUEVO ENLACE DIRECTO -->
         <div class="zora-section">
-            <div class="zora-title">Support our Launch</div>
-            <img src="https://zora.co" alt="Genesis NFT" class="nft-preview">
-            <p style="margin-bottom: 25px; font-style: italic;">"All proceeds from this Genesis NFT go towards $LOVE token liquidity."</p>
+            <div class="zora-title">WLA Golden Liquidity</div>
+            <img src="https://zora.co" alt="Golden Liquidity NFT" class="nft-preview">
+            <p style="margin-bottom: 25px; font-style: italic;">"Funding the initial liquidity for the $LOVE token launch."</p>
+            
+            <!-- ENLACE DE COLECCIÓN: Forzamos la vista de compra -->
             <a href="https://zora.co" target="_blank" class="btn-zora">
-                COLECT & FUND $LOVE
+                COLLECT & FUND ON ZORA
             </a>
+        </div>
+
+        <div class="qr-section">
+            <img src="https://qrserver.com" alt="QR Contract" class="qr-code">
+            <div class="contract-address">0x76fbabd84907f785fcf0a9727f0635606185f93f</div>
         </div>
 
         <div class="btn-group">
@@ -100,15 +111,11 @@
             <h2>The Launch Strategy</h2>
             <div class="step">
                 <div class="step-num">1</div>
-                <div class="step-content"><b>Phase 1: Funding</b><p>We are currently raising 400€ for the initial liquidity pool through our Genesis NFT sales. Join the Telegram to track progress.</p></div>
+                <div class="step-content"><b>Phase 1: Funding</b><p>We are raising 400€ for liquidity through our 'Golden Liquidity' NFT sales.</p></div>
             </div>
             <div class="step">
                 <div class="step-num">2</div>
-                <div class="step-content"><b>Phase 2: Token Launch</b><p>Once our liquidity goal is met, $LOVE will be officially deployed on Base Chain with a verified pool.</p></div>
-            </div>
-            <div class="step">
-                <div class="step-num">3</div>
-                <div class="step-content"><b>Phase 3: Real Aid</b><p>Starting our global social aid fund (1%) for ROM communities worldwide. In Love We Trust.</p></div>
+                <div class="step-content"><b>Phase 2: Token Launch</b><p>Official $LOVE deployment on Base Chain with verified liquidity.</p></div>
             </div>
         </div>
 
@@ -116,10 +123,9 @@
             <div class="item"><b>Goal</b> <span>400€ Liquidity</span></div>
             <div class="item"><b>Network</b> <span>Base Chain</span></div>
             <div class="item"><b>Social Aid</b> <span style="color: #d4af37;">1% ROM Nation</span></div>
-            <div class="item"><b>Transparency</b> <span>100% Verified</span></div>
         </div>
 
-        <footer>&copy; 2026 World LOVE Alliance. Built from zero to hero.</footer>
+        <footer>&copy; 2026 World LOVE Alliance. Built with pride.</footer>
     </div>
 </body>
 </html>
