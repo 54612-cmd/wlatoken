@@ -14,6 +14,24 @@
         h1 { color: #d4af37; font-size: 2.6rem; margin: 10px 0; letter-spacing: 1px; }
         .tagline { font-size: 1.1rem; color: #d4af37; margin-bottom: 40px; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; }
 
+        /* SECCIÓN ZORA */
+        .zora-section {
+            background: linear-gradient(145deg, #25051a, #101010);
+            border-radius: 30px;
+            padding: 40px 20px;
+            margin: 40px 0;
+            border: 2px solid #ff1493;
+            box-shadow: 0 0 30px rgba(255, 20, 147, 0.2);
+        }
+        .zora-title { color: #ff1493; font-size: 1.4rem; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 2px; }
+        .nft-preview { width: 100%; max-width: 400px; border-radius: 15px; border: 1px solid #d4af37; margin-bottom: 25px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .btn-zora { 
+            background: #ff1493; color: white; padding: 20px 40px; text-decoration: none; 
+            border-radius: 50px; font-weight: bold; font-size: 1.2rem; display: inline-block;
+            box-shadow: 0 5px 15px rgba(255, 20, 147, 0.4); transition: 0.3s; border: 2px solid gold;
+        }
+        .btn-zora:hover { transform: scale(1.05); background: #d4af37; color: #000; }
+
         .manifesto {
             background: linear-gradient(145deg, #1a1a1a, #101010);
             border-radius: 30px;
@@ -29,12 +47,7 @@
         .manifesto-text { font-size: 1.15rem; color: #ffffff; text-align: justify; font-style: italic; font-weight: 300; }
         .manifesto-signature { margin-top: 30px; text-align: right; color: #d4af37; font-weight: bold; font-size: 1.2rem; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 15px; }
 
-        /* NUEVA SECCIÓN: ESTRATEGIA */
-        .strategy {
-            text-align: left;
-            margin-bottom: 50px;
-            padding: 0 10px;
-        }
+        .strategy { text-align: left; margin-bottom: 50px; padding: 0 10px; }
         .strategy h2 { color: #d4af37; font-size: 1.6rem; text-align: center; text-transform: uppercase; margin-bottom: 30px; }
         .step { margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px; }
         .step-num { background: #d4af37; color: #000; font-weight: bold; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -63,6 +76,16 @@
         <h1>World LOVE Alliance</h1>
         <p class="tagline">In Love We Trust</p>
 
+        <!-- SECCIÓN OFICIAL ZORA -->
+        <div class="zora-section">
+            <div class="zora-title">Official $LOVE Genesis NFT</div>
+            <img src="https://zora.co" alt="Genesis NFT" class="nft-preview">
+            <p style="margin-bottom: 25px; font-style: italic;">"Support the Alliance. Empower the ROM nation."</p>
+            <a href="https://zora.co" target="_blank" class="btn-zora">
+                BUY $LOVE ON ZORA
+            </a>
+        </div>
+
         <div class="btn-group">
             <a href="https://t.me" class="btn-main">JOIN THE ALLIANCE</a>
             <a href="https://telegram.org" class="btn-sub">Don't have Telegram? Download here</a>
@@ -77,31 +100,27 @@
             <div class="manifesto-signature">— An Arlí man for Humanity</div>
         </div>
 
-        <!-- SECCIÓN DE LA ESTRATEGIA EXPLICADA -->
         <div class="strategy">
             <h2>The Launch Strategy</h2>
-            
             <div class="step">
                 <div class="step-num">1</div>
                 <div class="step-content">
                     <b>Community First</b>
-                    <p>We are building a real family before the money. Trust cannot be rushed. We invite you to join us on Telegram and X to meet the founder and the mission. No token exists yet.</p>
+                    <p>We are building a real family before the money. Trust cannot be rushed. We invite you to join us on Telegram and X to meet the founder and the mission.</p>
                 </div>
             </div>
-
             <div class="step">
                 <div class="step-num">2</div>
                 <div class="step-content">
-                    <b>Token Creation</b>
-                    <p>Once our community is strong and united, we will deploy the $LOVE smart contract on the Base Chain, ensuring 1% goes to our global social aid fund.</p>
+                    <b>Official Deployment</b>
+                    <p>The $LOVE token is now live on the Base Chain. 1% of the supply is dedicated to our global social aid fund for the ROM nation.</p>
                 </div>
             </div>
-
             <div class="step">
                 <div class="step-num">3</div>
                 <div class="step-content">
-                    <b>Official Fair Launch</b>
-                    <p>Finally, we will provide liquidity and launch to the world. Transparency is our core value: no pre-sales, no secrets, just Love.</p>
+                    <b>Global Expansion</b>
+                    <p>We are integrating $LOVE with art, commerce, and aid. Transparency is our core value: Just Love.</p>
                 </div>
             </div>
         </div>
