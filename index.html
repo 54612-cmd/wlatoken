@@ -7,150 +7,95 @@
     <style>
         body { background-color: #0f0f0f; color: #e0e0e0; font-family: 'Segoe UI', Roboto, sans-serif; text-align: center; margin: 0; padding: 0; line-height: 1.8; }
         .container { padding: 50px 20px; max-width: 750px; margin: auto; }
-        
         .moneda { width: 230px; height: auto; filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.6)); margin-bottom: 15px; animation: float 4s ease-in-out infinite; }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } }
-        
         h1 { color: #d4af37; font-size: 2.6rem; margin: 10px 0; letter-spacing: 1px; }
         .tagline { font-size: 1.1rem; color: #d4af37; margin-bottom: 40px; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; }
 
-        /* SECCIÓN ZORA OFICIAL */
-        .zora-section {
-            background: linear-gradient(145deg, #25051a, #101010);
-            border-radius: 30px;
-            padding: 40px 20px;
-            margin: 40px 0;
-            border: 2px solid #ff1493;
-            box-shadow: 0 0 30px rgba(255, 20, 147, 0.2);
-        }
+        .zora-section { background: linear-gradient(145deg, #25051a, #101010); border-radius: 30px; padding: 40px 20px; margin: 40px 0; border: 2px solid #ff1493; box-shadow: 0 0 30px rgba(255, 20, 147, 0.2); }
         .zora-title { color: #ff1493; font-size: 1.4rem; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 2px; }
-        .nft-preview { width: 100%; max-width: 400px; border-radius: 15px; border: 1px solid #d4af37; margin-bottom: 25px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
-        .btn-zora { 
-            background: #ff1493; color: white; padding: 20px 40px; text-decoration: none; 
-            border-radius: 50px; font-weight: bold; font-size: 1.2rem; display: inline-block;
-            box-shadow: 0 5px 15px rgba(255, 20, 147, 0.4); transition: 0.3s; border: 2px solid gold;
-        }
-        .btn-zora:hover { transform: scale(1.05); background: #d4af37; color: #000; }
+        .nft-preview { width: 100%; max-width: 400px; border-radius: 15px; border: 1px solid #d4af37; margin-bottom: 25px; }
+        .btn-zora { background: #ff1493; color: white; padding: 20px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; display: inline-block; border: 2px solid gold; }
 
-        /* QR Y CONTRATO SEGURO */
+        .btn-group { display: flex; flex-direction: column; gap: 20px; align-items: center; margin-bottom: 55px; }
+        .btn-main { background: linear-gradient(to right, #d4af37, #f2d06b); color: #000; padding: 22px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.3rem; width: 90%; }
+
         .qr-section { margin: 40px 0; padding: 30px; background: #1a1a1a; border-radius: 20px; border: 1px dashed #d4af37; }
         .qr-code { width: 180px; height: 180px; background: white; margin: 0 auto 20px; padding: 10px; border-radius: 10px; }
-        .contract-label { color: #d4af37; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; display: block; }
         .contract-address { word-break: break-all; font-family: monospace; font-size: 0.9rem; color: #fff; background: #000; padding: 10px; border-radius: 5px; }
 
-        .manifesto {
-            background: linear-gradient(145deg, #1a1a1a, #101010);
-            border-radius: 30px;
-            padding: 45px 35px;
-            margin-bottom: 45px;
-            border: 1px solid rgba(212, 175, 55, 0.4);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
-            position: relative;
-        }
+        .manifesto { background: linear-gradient(145deg, #1a1a1a, #101010); border-radius: 30px; padding: 45px 35px; margin-bottom: 45px; border: 1px solid rgba(212, 175, 55, 0.4); position: relative; }
         .manifesto::before { content: "🦁"; position: absolute; top: -25px; left: 50%; transform: translateX(-50%); font-size: 2.2rem; background: #0f0f0f; padding: 0 20px; }
-        
-        .manifesto-title { color: #d4af37; font-size: 1.5rem; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
-        .manifesto-text { font-size: 1.15rem; color: #ffffff; text-align: justify; font-style: italic; font-weight: 300; }
-        .manifesto-signature { margin-top: 30px; text-align: right; color: #d4af37; font-weight: bold; font-size: 1.2rem; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 15px; }
+        .manifesto-title { color: #d4af37; font-size: 1.5rem; margin-bottom: 25px; text-transform: uppercase; font-weight: bold; }
+        .manifesto-text { font-size: 1.15rem; color: #ffffff; text-align: justify; font-style: italic; }
 
-        /* SECCIÓN ESTRATEGIA COMPLETA */
         .strategy { text-align: left; margin-bottom: 50px; padding: 0 10px; }
         .strategy h2 { color: #d4af37; font-size: 1.6rem; text-align: center; text-transform: uppercase; margin-bottom: 30px; }
         .step { margin-bottom: 25px; display: flex; align-items: flex-start; gap: 15px; }
         .step-num { background: #d4af37; color: #000; font-weight: bold; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .step-content b { color: #d4af37; display: block; font-size: 1.1rem; }
-        .step-content p { margin: 5px 0 0 0; opacity: 0.8; font-size: 0.95rem; }
-
-        .btn-group { display: flex; flex-direction: column; gap: 20px; align-items: center; margin-bottom: 55px; }
-        .btn-main { 
-            background: linear-gradient(to right, #d4af37, #f2d06b); color: #000; padding: 22px; text-decoration: none; 
-            border-radius: 50px; font-weight: bold; font-size: 1.3rem; width: 90%; 
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3); transition: 0.3s;
-        }
+        .step-content b { color: #d4af37; display: block; }
 
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
         .item { background: rgba(255,255,255,0.02); padding: 15px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.1); }
-        .item b { color: #d4af37; display: block; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 5px; letter-spacing: 1px; }
-        .item span { font-size: 1.1rem; font-weight: 400; }
+        .item b { color: #d4af37; display: block; font-size: 0.75rem; text-transform: uppercase; }
 
-        footer { font-size: 0.8rem; opacity: 0.4; padding: 60px 0; border-top: 1px solid #1a1a1a; letter-spacing: 1px; }
+        footer { font-size: 0.8rem; opacity: 0.4; padding: 60px 0; border-top: 1px solid #1a1a1a; }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="$LOVE.png" alt="World LOVE Alliance Logo" class="moneda">
+        <img src="$LOVE.png" alt="WLA Logo" class="moneda">
         <h1>World LOVE Alliance</h1>
         <p class="tagline">In Love We Trust</p>
 
-        <!-- QR Y CONTRATO PARA APOYO DIRECTO -->
+        <!-- BOTÓN TELEGRAM: Formato universal t.me -->
+        <div class="btn-group">
+            <a href="https://t.me" class="btn-main">JOIN TELEGRAM COMMUNITY</a>
+        </div>
+
+        <!-- SECCIÓN ZORA: Formato de colección directa -->
+        <div class="zora-section">
+            <div class="zora-title">Golden Liquidity Genesis</div>
+            <img src="https://zora.co" alt="NFT Preview" class="nft-preview">
+            <p style="margin-bottom: 25px; font-style: italic;">"Funding liquidity for $LOVE launch."</p>
+            <a href="https://zora.co" class="btn-zora">COLLECT & FUND ON ZORA</a>
+        </div>
+
         <div class="qr-section">
-            <span class="contract-label">Official $LOVE Contract (Base Chain)</span>
-            <img src="https://qrserver.com" alt="QR Contract" class="qr-code">
+            <span class="contract-label">Official Contract (Base Chain)</span><br><br>
+            <img src="https://qrserver.com" alt="QR" class="qr-code">
             <div class="contract-address">0x76fbabd84907f785fcf0a9727f0635606185f93f</div>
         </div>
 
-        <!-- SECCIÓN ZORA CON LINK AL NFT DE LIQUIDEZ -->
-        <div class="zora-section">
-            <div class="zora-title">Golden Liquidity Genesis</div>
-            <img src="https://zora.co" alt="Genesis NFT" class="nft-preview">
-            <p style="margin-bottom: 25px; font-style: italic;">"Supporting the liquidity for $LOVE token launch."</p>
-            <a href="https://zora.co" target="_blank" class="btn-zora">
-                COLLECT & FUND ON ZORA
-            </a>
-        </div>
-
-        <div class="btn-group">
-            <a href="https://t.me" target="_blank" class="btn-main">JOIN TELEGRAM COMMUNITY</a>
-        </div>
-
-        <!-- MANIFIESTO COMPLETO -->
         <div class="manifesto">
             <div class="manifesto-title">The Founder's Heart</div>
-            <div class="manifesto-text">
-                "I grew up within walls that did not know my roots, in the silence of an orphanage, surrounded by a world that was not my own. For years, I walked alone, longing for the embrace of my blood and the warmth of my people. But in that solitude, a promise was born.<br><br>
-                Today, that promise is the <b>World LOVE Alliance</b>. This is more than technology; it is my way back home. A digital territory without borders where the ROM nation and every lonely heart shall find their place. 1% of every heartbeat ($LOVE) will support our people worldwide. Because in the end, love is the only thing that will save us."
-            </div>
-            <div class="manifesto-signature">— An Arlí man for Humanity</div>
+            <div class="manifesto-text">"Today, this promise is the <b>World LOVE Alliance</b>. This is more than technology; it is my way back home. A digital territory where the ROM nation shall find their place."</div>
         </div>
 
-        <!-- ESTRATEGIA COMPLETA PASO A PASO -->
         <div class="strategy">
-            <h2>The Launch Strategy</h2>
+            <h2>The Strategy</h2>
             <div class="step">
                 <div class="step-num">1</div>
-                <div class="step-content">
-                    <b>Phase 1: Funding</b>
-                    <p>We are raising 400€ for liquidity through our Genesis NFT sales. Join the Telegram to track progress.</p>
-                </div>
+                <div class="step-content"><b>Phase 1: Funding</b><p>Raising 400€ for liquidity via Genesis NFTs.</p></div>
             </div>
             <div class="step">
                 <div class="step-num">2</div>
-                <div class="step-content">
-                    <b>Phase 2: Token Launch</b>
-                    <p>Once our goal is met, $LOVE will be officially deployed on Base Chain with verified liquidity.</p>
-                </div>
+                <div class="step-content"><b>Phase 2: Token Launch</b><p>Official $LOVE deployment on Base Chain.</p></div>
             </div>
             <div class="step">
                 <div class="step-num">3</div>
-                <div class="step-content">
-                    <b>Phase 3: Real Aid</b>
-                    <p>Starting our global social aid fund (1%) for ROM communities worldwide. In Love We Trust.</p>
-                </div>
+                <div class="step-content"><b>Phase 3: Social Aid</b><p>Starting our global fund (1%) for ROM communities.</p></div>
             </div>
         </div>
 
-        <!-- CUADRÍCULA DE DATOS -->
         <div class="grid">
             <div class="item"><b>Goal</b> <span>400€ Liquidity</span></div>
             <div class="item"><b>Network</b> <span>Base Chain</span></div>
-            <div class="item"><b>Social Aid</b> <span style="color: #d4af37;">1% ROM Nation</span></div>
-            <div class="item"><b>Transparency</b> <span>100% Verified</span></div>
+            <div class="item"><b>Aid</b> <span style="color: #d4af37;">1% ROM Nation</span></div>
+            <div class="item"><b>Taxes</b> <span>0% Fees</span></div>
         </div>
 
-        <footer>
-            &copy; 2026 World LOVE Alliance.<br>
-            Built with pride.
-        </footer>
+        <footer>&copy; 2026 World LOVE Alliance.</footer>
     </div>
 </body>
 </html>
