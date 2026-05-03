@@ -3,93 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORLD LOVE ALLIANCE - $LOVE Official</title>
+    <title>WORLD LOVE ALLIANCE - Official</title>
     <style>
-        body { background-color: #080808; color: #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
-        .container { padding: 40px 15px; max-width: 800px; margin: auto; }
-        
-        /* Logo Animado */
-        .moneda { width: 150px; filter: drop-shadow(0 0 20px #d4af37); animation: float 4s infinite ease-in-out; }
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-        
-        h1 { color: #d4af37; font-size: 2.2rem; margin: 15px 0 5px 0; letter-spacing: 2px; text-transform: uppercase; }
-        .tagline { color: #d4af37; letter-spacing: 4px; font-size: 0.9rem; margin-bottom: 40px; opacity: 0.8; }
-
-        /* Botones de Acción */
-        .btn-group { display: flex; flex-direction: column; gap: 15px; margin-bottom: 50px; align-items: center; }
-        .btn { display: block; padding: 20px; border-radius: 50px; font-weight: bold; text-decoration: none; transition: 0.3s; font-size: 1.1rem; width: 90%; max-width: 400px; }
-        .btn-main { background: linear-gradient(135deg, #d4af37, #f2d06b); color: #000; box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); }
+        body { background-color: #050505; color: #e0e0e0; font-family: sans-serif; text-align: center; margin: 0; padding: 0; }
+        .container { padding: 30px 15px; max-width: 500px; margin: auto; }
+        .moneda { width: 140px; filter: drop-shadow(0 0 15px #d4af37); margin-bottom: 10px; }
+        h1 { color: #d4af37; font-size: 1.8rem; margin: 10px 0; text-transform: uppercase; }
+        .btn { display: block; padding: 18px; margin: 10px 0; border-radius: 50px; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .btn-main { background: linear-gradient(to right, #d4af37, #f2d06b); color: #000; }
         .btn-dex { background: #1b212d; color: #00ffcc; border: 1px solid #00ffcc; }
-        .btn:hover { transform: scale(1.02); opacity: 0.9; }
-
-        /* Galería Visual Pura */
-        .gallery-title { color: #d4af37; font-size: 1.5rem; text-transform: uppercase; margin-top: 50px; margin-bottom: 30px; letter-spacing: 3px; }
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
-            gap: 20px; 
-            padding: 10px;
-        }
-        .nft-card { 
-            background: #121212; 
-            border-radius: 20px; 
-            overflow: hidden; 
-            border: 1px solid #333; 
-            transition: 0.3s;
-            text-decoration: none;
-        }
-        .nft-card:hover { 
-            border-color: #ff1493; 
-            box-shadow: 0 0 20px rgba(255, 20, 147, 0.2); 
-            transform: translateY(-5px);
-        }
-        .nft-card img { 
-            width: 100%; 
-            display: block; 
-            aspect-ratio: 1 / 1; 
-            object-fit: cover; 
-        }
-
-        footer { padding: 60px 20px; opacity: 0.3; font-size: 0.8rem; border-top: 1px solid #1a1a1a; margin-top: 60px; }
+        .btn-zora { background: #141414; color: #ff1493; border: 1px solid #ff1493; font-size: 0.9rem; }
+        .gallery-title { color: #d4af37; margin-top: 40px; border-bottom: 1px solid #222; padding-bottom: 10px; text-transform: uppercase; font-size: 1.2rem; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- HEADER -->
-        <img src="$LOVE.png" class="moneda" alt="WLA Logo">
+        <img src="$LOVE.png" class="moneda">
         <h1>WORLD LOVE ALLIANCE</h1>
-        <p class="tagline">IN LOVE WE TRUST</p>
+        <p style="color:#d4af37; font-size:0.8rem; letter-spacing:2px;">IN LOVE WE TRUST</p>
 
-        <!-- ACCIONES -->
-        <div class="btn-group">
-            <a href="https://t.me/WorldLoveAlliance" target="_blank" class="btn btn-main">JOIN TELEGRAM</a>
-            <a href="https://dexscreener.com/base/0x3563b0a234b8f3badc80e2494a003d9c30e79a4d" target="_blank" class="btn btn-dex">📈 VIEW LIVE CHART</a>
-        </div>
+        <a href="https://t.me" target="_blank" class="btn btn-main">JOIN TELEGRAM COMMUNITY</a>
+        <a href="https://dexscreener.com" target="_blank" class="btn btn-dex">📈 VIEW LIVE CHART</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora" style="background:#ff1493; color:white;">VIEW FULL ZORA PROFILE</a>
 
-        <h2 class="gallery-title">The Zion Gallery</h2>
+        <h2 class="gallery-title">THE ZION GALLERY</h2>
+        <p style="font-size:0.8rem; opacity:0.6;">Select a Masterpiece to Collect:</p>
 
-        <div class="grid">
-            <!-- HE PUESTO LOS 15 ENLACES EXACTOS QUE ME HAS PASADO -->
-            <a href="https://zora.co/coin/base:0x76fbabd84907f785fcf0a9727f0635606185f93f?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x937df5d237f47b704010dd913bfc1e761aea39d8?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x2995fa7e8e528eaf3b045ec6f6e66e0275314802?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x9ce74d89341d494a97ba255b7a6cf565303613d2?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x54f17ab020e01e0c759af4c845647286bebc7067?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x61f7d53e8d5367892c7a0a2a52681a9a4177e45a?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x6f9c2b546bc3d0ff3f67997b8ba8af944f0320e8?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0xa8a8ad3833b87d44ff757cc7f087492229b39fbc?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x8e79504b855475a09e6eb84089747e3ee8323a0f?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x80be7ed7d55bb10970406a4e77e803a8cd05c2c7?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co3"></a>
-            <a href="https://zora.co/coin/base:0x8e83d47c053c6869992f6dce1065f3ec3ac7a60d?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co0"></a>
-            <a href="https://zora.co/coin/base:0xce5b7fb63f5fcf1eb8398c7b6890f7ca6559b544?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co1"></a>
-            <a href="https://zora.co/coin/base:0x47fada10142395c7c8802744f642435a8a20106e?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x013b30375401bc7977aef333d6f383361bc8ffce?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co"></a>
-            <a href="https://zora.co/coin/base:0x13174af3a3043eef6c754c392d4cbd2eeb345b29?referrer=0x85717575f1c0bf427f8cf36884fdb190a8c4a47e" target="_blank" class="nft-card"><img src="https://zora.co2"></a>
-        </div>
+        <!-- LISTA DIRECTA DE TUS 15 ENLACES -->
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #15</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #14</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #13</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #12</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #11</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #10</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #9</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #8</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #7</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #6</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #5</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #4</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #3</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #2</a>
+        <a href="https://zora.co" target="_blank" class="btn btn-zora">COLLECT ARTIFACT #1</a>
 
-        <footer>
-            &copy; 2026 WORLD LOVE ALLIANCE<br>
-            In Love We Trust.
+        <footer style="margin-top:50px; opacity:0.3; font-size:0.7rem;">
+            &copy; 2026 WORLD LOVE ALLIANCE
         </footer>
     </div>
 </body>
