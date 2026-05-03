@@ -3,99 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World LOVE Alliance - $LOVE Official</title>
+    <title>WORLD LOVE ALLIANCE - $LOVE Official</title>
     <style>
-        body { background-color: #080808; color: #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
-        .container { padding: 40px 15px; max-width: 600px; margin: auto; }
+        body { background-color: #050505; color: #e0e0e0; font-family: sans-serif; text-align: center; margin: 0; padding: 0; }
+        .container { padding: 30px 10px; max-width: 800px; margin: auto; }
         
-        /* Identidad Visual */
-        .moneda { width: 160px; filter: drop-shadow(0 0 20px #d4af37); animation: float 4s infinite ease-in-out; }
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-        h1 { color: #d4af37; font-size: 2.4rem; margin: 15px 0 5px 0; letter-spacing: 2px; }
-        .tagline { color: #d4af37; letter-spacing: 4px; font-size: 0.9rem; margin-bottom: 40px; opacity: 0.8; }
-
-        /* Botones Principales */
-        .btn-group { display: flex; flex-direction: column; gap: 15px; margin-bottom: 50px; }
-        .btn { display: block; padding: 20px; border-radius: 50px; font-weight: bold; text-decoration: none; transition: 0.3s; font-size: 1.1rem; }
-        .btn-main { background: linear-gradient(135deg, #d4af37, #f2d06b); color: #000; box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); }
-        .btn-dex { background: #1b212d; color: #00ffcc; border: 1px solid #00ffcc; }
-        .btn:hover { transform: scale(1.02); opacity: 0.9; }
-
-        /* Galería Zion */
-        .gallery-title { color: #d4af37; font-size: 1.6rem; text-transform: uppercase; margin-top: 50px; border-bottom: 1px solid #333; padding-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: 1fr; gap: 25px; margin-top: 30px; }
+        .moneda { width: 140px; filter: drop-shadow(0 0 15px #d4af37); animation: float 4s infinite ease-in-out; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
         
-        .card { background: #121212; border-radius: 25px; padding: 20px; border: 1px solid #333; transition: 0.3s; }
-        .card:hover { border-color: #ff1493; box-shadow: 0 0 20px rgba(255, 20, 147, 0.1); }
-        .card img { width: 100%; border-radius: 18px; margin-bottom: 15px; border: 1px solid #222; }
-        .card-name { color: #ff1493; font-weight: bold; font-size: 1rem; margin-bottom: 15px; text-transform: uppercase; display: block; }
-        .btn-collect { background: #ff1493; color: #fff; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-size: 0.9rem; display: inline-block; border: 1px solid gold; font-weight: bold; }
+        h1 { color: #d4af37; font-size: 1.8rem; margin: 15px 0; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .btn-group { display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; align-items: center; }
+        .btn { display: block; padding: 18px; border-radius: 50px; font-weight: bold; text-decoration: none; width: 90%; max-width: 400px; }
+        .btn-main { background: linear-gradient(135deg, #d4af37, #f2d06b); color: #000; }
+        .btn-dex { background: #1b212d; color: #00ffcc; border: 1px solid #00ffcc; font-size: 0.9rem; }
 
-        footer { padding: 60px 20px; opacity: 0.4; font-size: 0.8rem; border-top: 1px solid #1a1a1a; margin-top: 50px; }
+        /* GALERÍA VISUAL PURA */
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+            gap: 15px; 
+            padding: 10px;
+        }
+        .nft-link { 
+            display: block; 
+            transition: 0.3s; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            border: 1px solid #222;
+        }
+        .nft-link:hover { 
+            transform: scale(1.05); 
+            border-color: #ff1493; 
+            box-shadow: 0 0 15px rgba(255, 20, 147, 0.3); 
+        }
+        .nft-link img { 
+            width: 100%; 
+            display: block; 
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+        }
+
+        footer { padding: 50px; opacity: 0.3; font-size: 0.7rem; border-top: 1px solid #111; margin-top: 40px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- HEADER -->
-        <img src="$LOVE.png" class="moneda" alt="WLA Logo">
-        <h1>WLA ZION</h1>
-        <p class="tagline">IN LOVE WE TRUST</p>
+        <img src="$LOVE.png" class="moneda">
+        <h1>WORLD LOVE ALLIANCE</h1>
 
-        <!-- ACCIONES RÁPIDAS -->
         <div class="btn-group">
-            <a href="https://t.me/WorldLoveAlliance" target="_blank" class="btn btn-main">JOIN TELEGRAM COMMUNITY</a>
-            <a href="https://dexscreener.com/base/0x3563b0a234b8f3badc80e2494a003d9c30e79a4d" target="_blank" class="btn btn-dex">📈 LIVE CHART (DEXSCREENER)</a>
+            <a href="https://t.me" target="_blank" class="btn btn-main">JOIN TELEGRAM</a>
+            <a href="https://dexscreener.com" target="_blank" class="btn btn-dex">📈 LIVE CHART</a>
         </div>
-
-        <h2 class="gallery-title">The Zion Gallery</h2>
-        <p style="font-size: 0.9rem; opacity: 0.6;">Explore the artifacts of the ROM nation on Base Chain</p>
 
         <div class="grid">
-            <!-- PUMARO LUCHA -->
-            <div class="card">
-                <span class="card-name">Pumaro Lucha Manifesto</span>
-                <img src="https://zora.co" alt="Pumaro Lucha">
-                <a href="https://zora.co/coin/base:0x13174af3a3043eef6c754c392d4cbd2eeb345b29" target="_blank" class="btn-collect">COLLECT</a>
-            </div>
-
-            <!-- ZION PASSPORT -->
-            <div class="card">
-                <span class="card-name">Founder Zion Passport</span>
-                <img src="https://zora.co" alt="Passport">
-                <a href="https://zora.co/coin/base:0x013b30375401bc7977aef333d6f383361bc8ffce" target="_blank" class="btn-collect">COLLECT</a>
-            </div>
-
-            <!-- MASTERCORE -->
-            <div class="card">
-                <span class="card-name">Zion MasterCore</span>
-                <img src="https://zora.co" alt="MasterCore">
-                <a href="https://zora.co/coin/base:0x47fada10142395c7c8802744f642435a8a20106e" target="_blank" class="btn-collect">COLLECT</a>
-            </div>
-
-            <!-- UNIVERSAL HEART -->
-            <div class="card">
-                <span class="card-name">Universal Global Heart</span>
-                <img src="https://zora.co" alt="Universal">
-                <a href="https://zora.co/coin/base:0xce5b7fb63f5fcf1eb8398c7b6890f7ca6559b544" target="_blank" class="btn-collect">COLLECT</a>
-            </div>
-
-            <!-- CRYSTAL RELIC -->
-            <div class="card">
-                <span class="card-name">The Crystal Relic</span>
-                <img src="https://zora.co" alt="Relic">
-                <a href="https://zora.co/coin/base:0x8e83d47c053c6869992f6dce1065f3ec3ac7a60d" target="_blank" class="btn-collect">COLLECT</a>
-            </div>
-        </div>
-
-        <div style="margin-top: 40px; padding: 20px;">
-            <a href="https://zora.co/@wlatoken" target="_blank" style="color: #d4af37; text-decoration: none; font-weight: bold; border: 1px solid #d4af37; padding: 15px 30px; border-radius: 50px;">
-                VIEW FULL COLLECTION ON ZORA
-            </a>
+            <!-- Usamos la API de Zora para mostrar las imágenes de tus 15 contratos en orden -->
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co4"></a>
+            <a href="https://zora.co" target="_blank" class="nft-link"><img src="https://zora.co"></a>
         </div>
 
         <footer>
             &copy; 2026 WORLD LOVE ALLIANCE<br>
-            All rights reserved. Zion Network.
+            In Love We Trust. Zion Gallery.
         </footer>
     </div>
 </body>
