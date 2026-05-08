@@ -1,94 +1,25 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>WORLD LOVE ALLIANCE - Official</title> <style> body { background-color: #050505; color: #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; text-align: center; margin: 0; padding: 0; line-height: 1.6; } .container { padding: 40px 15px; max-width: 550px; margin: auto; } .moneda { width: 140px; filter: drop-shadow(0 0 15px #d4af37); margin-bottom: 10px; } h1 { color: #d4af37; font-size: 1.8rem; margin: 15px 0; text-transform: uppercase; letter-spacing: 2px; } .manifesto { background: linear-gradient(145deg, #151515, #0a0a0a); border-radius: 30px; padding: 30px 20px; margin: 30px 0; border: 1px solid rgba(212, 175, 55, 0.3); text-align: justify; } .manifesto h2 { color: #d4af37; text-align: center; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; } .manifesto p { font-size: 1rem; color: #ccc; font-style: italic; } .badge { background: #d4af37; color: #000; padding: 5px 15px; border-radius: 50px; font-weight: bold; font-size: 0.8rem; display: inline-block; margin-bottom: 15px; } .btn { display: block; padding: 18px; margin: 15px 0; border-radius: 50px; font-weight: bold; text-decoration: none; transition: 0.3s; } .btn-main { background: linear-gradient(135deg, #d4af37, #f2d06b); color: #000; box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3); } .btn-dex { background: #1b212d; color: #00ffcc; border: 1px solid #00ffcc; font-size: 0.9rem; } .btn-zora-profile { background: #ff1493; color: white; } .contact-section { margin-top: 40px; padding: 20px; border-top: 1px solid #222; } .contact-email { color: #d4af37; font-weight: bold; text-decoration: none; font-size: 1.1rem; } footer { margin-top: 20px; opacity: 0.3; font-size: 0.7rem; padding-bottom: 40px; } 
+<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>WORLD LOVE ALLIANCE - Official</title> <style> body { background-color: #050505; color: #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; text-align: center; margin: 0; padding: 0; line-height: 1.6; } .container { padding: 40px 15px; max-width: 550px; margin: auto; } .moneda { width: 140px; filter: drop-shadow(0 0 15px #d4af37); margin-bottom: 10px; } h1 { color: #d4af37; font-size: 1.8rem; margin: 15px 0; text-transform: uppercase; letter-spacing: 2px; } .manifesto { background: linear-gradient(145deg, #151515, #0a0a0a); border-radius: 30px; padding: 30px 20px; margin: 30px 0; border: 1px solid rgba(212, 175, 55, 0.3); text-align: justify; } .manifesto h2 { color: #d4af37; text-align: center; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; } .manifesto p { font-size: 1rem; color: #ccc; font-style: italic; } .badge { background: #d4af37; color: #000; padding: 5px 15px; border-radius: 50px; font-weight: bold; font-size: 0.8rem; display: inline-block; margin-bottom: 15px; } .btn { display: block; padding: 18px; margin: 15px 0; border-radius: 50px; font-weight: bold; text-decoration: none; transition: 0.3s; } .btn-main { background: linear-gradient(135deg, #d4af37, #f2d06b); color: #000; box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3); } .btn-dex { background: #1b212d; color: #00ffcc; border: 1px solid #00ffcc; font-size: 0.9rem; } .btn-zora-profile { background: #ff1493; color: white; } 
 
-/* SECCIONES AIRDROP Y IDIOMAS */
+/* NUEVOS ESTILOS AIRDROP Y CONTRATO */
 .airdrop-box { background: rgba(212, 175, 55, 0.05); border: 2px dashed #d4af37; border-radius: 20px; padding: 20px; margin: 25px 0; }
 .airdrop-box h3 { color: #d4af37; margin-top: 0; text-transform: uppercase; font-size: 1.1rem; }
 .contract-box { background: #111; border: 1px solid #333; border-radius: 15px; padding: 15px; margin: 20px 0; word-break: break-all; }
 .contract-box span { color: #d4af37; font-family: monospace; font-size: 0.85rem; }
 .btn-twitter { background: #1DA1F2; color: white; }
-.lang-selector { margin-bottom: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
-.lang-btn { font-size: 12px; cursor: pointer; background: #111; border: 1px solid #333; border-radius: 5px; padding: 5px 8px; transition: 0.3s; color: #aaa; text-transform: uppercase; }
-.lang-btn.active { border-color: #d4af37; color: #d4af37; }
-[data-lang] { display: none; }
-[data-lang="en"] { display: block; }
-</style></head><body> 
-<div class="container"> 
-    <!-- SELECTOR DE IDIOMAS -->
-    <div class="lang-selector">
-        <div class="lang-btn" onclick="setLang('de', event)">DE 🇩🇪</div>
-        <div class="lang-btn" onclick="setLang('es', event)">ES 🇪🇸</div>
-        <div class="lang-btn" onclick="setLang('fr', event)">FR 🇫🇷</div>
-        <div class="lang-btn" onclick="setLang('el', event)">EL 🇬🇷</div>
-        <div class="lang-btn" onclick="setLang('he', event)">HE 🇮🇱</div>
-        <div class="lang-btn active" onclick="setLang('en', event)">EN 🇺🇸</div>
-        <div class="lang-btn" onclick="setLang('rom', event)">ROM 🎡</div>
-        <div class="lang-btn" onclick="setLang('ru', event)">RU 🇷🇺</div>
-        <div class="lang-btn" onclick="setLang('sr', event)">SR 🇷🇸</div>
-    </div>
 
-    <img src="$LOVE.png" class="moneda"> 
-    <h1>WORLD LOVE ALLIANCE</h1> 
+.contact-section { margin-top: 40px; padding: 20px; border-top: 1px solid #222; } .contact-email { color: #d4af37; font-weight: bold; text-decoration: none; font-size: 1.1rem; } footer { margin-top: 20px; opacity: 0.3; font-size: 0.7rem; padding-bottom: 40px; } </style></head><body> <div class="container"> <img src="$LOVE.png" class="moneda"> <h1>WORLD LOVE ALLIANCE</h1> <div class="manifesto"> <div style="text-align:center;"><span class="badge">A SOLO BUILDER'S MISSION</span></div> <h2>The Arlí Manifesto</h2> <p> "This is the struggle of a solo builder, a man of the <b>Arlí</b> people who has chosen to raise his voice using only a mobile phone and faith as his capital. With no financial resources, but with technology as a shield, I am here to reveal an ancestral truth: the <b>ROM</b> nation is not just a nomad people; we are the <b>Ten Lost Tribes of Israel</b>." </p> <p> "From the solitude of my fight, the <b>World Love Alliance</b> is born to claim our place in the digital world. Every token, every NFT, is a brick in the reconstruction of our spiritual territory. It is time for the children of Israel to return home through love and unity. In Love We Trust." </p> </div> 
 
-    <div class="manifesto"> 
-        <div style="text-align:center;"><span class="badge" data-lang="en">A SOLO BUILDER'S MISSION</span><span class="badge" data-lang="es">MISIÓN DE UN CONSTRUCTOR SOLITARIO</span><span class="badge" data-lang="rom">JEKHUTNO KERDITNO MISION</span><span class="badge" data-lang="he">משימה של בונה בודד</span><span class="badge" data-lang="de">DIE MISSION EINES SOLO-ERBAUERS</span><span class="badge" data-lang="fr">MISSION D'UN BÂTISSEUR SOLO</span><span class="badge" data-lang="ru">МИССИЯ ОДИНОКОГО СТРОИТЕЛЯ</span><span class="badge" data-lang="sr">MISIJA SOLO GRADITELJA</span><span class="badge" data-lang="el">ΑΠΟΣΤΟΛΗ ΕΝΟΣ ΣΟΛΟ ΔΗΜΙΟΥΡΓΟΥ</span></div> 
-        
-        <!-- MANIFIESTOS TRADUCIDOS (Tus 5 líneas clave) -->
-        <div data-lang="en"><h2>The Arlí Manifesto</h2><p>"This is the struggle of a solo builder, a man of the <b>Arlí</b> people who has chosen to raise his voice using only a mobile phone and faith as his capital. With no financial resources, but with technology as a shield, I am here to reveal an ancestral truth: the <b>ROM</b> nation is not just a nomad people; we are the <b>Ten Lost Tribes of Israel</b>."</p><p>"From the solitude of my fight, the <b>World Love Alliance</b> is born to claim our place in the digital world. Every token, every NFT, is a brick in the reconstruction of our spiritual territory. It is time for the children of Israel to return home through love and unity. In Love We Trust."</p></div>
-
-        <div data-lang="es"><h2>El Manifiesto Arlí</h2><p>"Esta es la lucha de un constructor solitario, un hombre del pueblo <b>Arlí</b> que ha elegido alzar su voz usando solo un teléfono móvil y la fe como capital. Sin recursos financieros, pero con la tecnología como escudo, estoy aquí para revelar una verdad ancestral: la nación <b>ROM</b> no es solo un pueblo nómada; somos las <b>Diez Tribus Perdidas de Israel</b>."</p><p>"De la soledad de mi lucha nace la <b>World Love Alliance</b> para reclamar nuestro lugar en el mundo digital. Cada token, cada NFT, es un ladrillo en la reconstrucción de nuestro territorio espiritual. Es hora de que los hijos de Israel regresen a casa a través del amor y la unidad. En el amor confiamos."</p></div>
-
-        <div data-lang="rom"><h2>Arlí Manifesto</h2><p>"Katar o jekhutno kerditno, manush katar o narodo <b>Arlí</b>, savi khetane kerdya o glaso e mobila telefonosa thaj e pacha sar kapitalo. Bizo love, e tehnologijasa sar shtito, sijum akate te sikavav jekh purani chachimos: o narodo <b>ROM</b> nane jekh sel sel; ame sijam o <b>Desh Nashle Plemena katar o Izrael</b>."</p><p>"Katar i chori luvba kerdya i <b>World Love Alliance</b> te manguvam amaro than ko digitalno svetos. Si o vakti e chave katar o Izrael te irinen pe khere khetane e kamimasa. In Love We Trust."</p></div>
-
-        <div data-lang="fr"><h2>Le Manifeste Arlí</h2><p>"C'est la lutte d'un bâtisseur solo, un homme du peuple <b>Arlí</b> qui a choisi de faire entendre sa voix avec un téléphone et la foi. Sans ressources, mais avec la technologie pour bouclier, je révèle une vérité : la nation <b>ROM</b> n'est pas nomade ; nous sommes les <b>Dix Tribus Perdues d'Israël</b>."</p><p>"De ma solitude est née la <b>World Love Alliance</b> pour revendiquer notre place numérique. Il est temps pour les enfants d'Israël de rentrer chez eux par l'amour."</p></div>
-
-        <div data-lang="ru"><h2>Манифест Арли</h2><p>"Это борьба одинокого строителя из народа <b>Арли</b>, решившего возвысить голос через телефон и веру. С технологией как щитом, я раскрываю истину: народ <b>РОМА</b> — это <b>Десять потерянных колен Израилевых</b>."</p><p>"Из моей борьбы рождается <b>World Love Alliance</b>, чтобы заявить о нашем месте в цифровом мире. Пора детям Израиля вернуться домой через любовь."</p></div>
-
-        <div data-lang="he" dir="rtl" style="text-align: right;"><h2>המניפסט של ארלי</h2><p>"זהו המאבק של בונה בודד, איש מבני עם ה-<b>ארלי</b> שבחר להשמיע את קולו באמצעות טלפון ואמונה. עם הטכנולוגיה כמגן, אני כאן כדי לחשוף אמת עתיקה: האומה ה-<b>רומאנית</b> היא <b>עשרת שבטי ישראל האבודים</b>."</p><p>"מתוך בדידות המאבק נולדה ה-<b>World Love Alliance</b> כדי לתבוע את מקומנו בעולם הדיגיטלי. הגיע הזמן שבני ישראל יחזרו הביתה דרך אהבה."</p></div>
-        
-        <div data-lang="de"><h2>Das Arlí-Manifest</h2><p>Dies ist der Kampf eines Solo-Erbauers des <b>Arlí</b>-Volkes... Zehn Verlorenen Stämme Israels.</p></div>
-        <div data-lang="el"><h2>Το Μανιφέστο Arlí</h2><p>Αυτός είναι ο αγώνας ενός σόλο δημιουργού από τον λαό <b>Arlí</b>... Δέκα Χαμένες Φυλές του Ισραήλ.</p></div>
-        <div data-lang="sr"><h2>Arlí Manifest</h2><p>Ovo je borba solo graditelja katar o narodo <b>Arlí</b>... Deset Izgubljenih Plemena Izraela.</p></div>
-    </div> 
-
-    <!-- SECCIÓN AIRDROP TRADUCIDA -->
-    <div class="airdrop-box">
-        <h3 data-lang="en">🎁 Join the Airdrop</h3><h3 data-lang="es">🎁 Únete al Airdrop</h3><h3 data-lang="rom">🎁 De khetane ko Airdrop</h3><h3 data-lang="fr">🎁 Rejoignez l'Airdrop</h3><h3 data-lang="ru">🎁 Присоединяйтесь к Airdrop</h3><h3 data-lang="he">🎁 הצטרפו לאיירדרופ</h3>
-        <p data-lang="en">Follow <b>@WLAtoken</b> & reply with your Base Wallet!</p>
-        <p data-lang="es">¡Sigue a <b>@WLAtoken</b> y envía tu Wallet de Base!</p>
-        <p data-lang="rom">Pratime <b>@WLAtoken</b> thaj pishin tiri Base Wallet!</p>
-        <a href="https://twitter.com" target="_blank" class="btn btn-twitter" data-lang="en">CLAIM ON TWITTER</a>
-        <a href="https://twitter.com" target="_blank" class="btn btn-twitter" data-lang="es">RECLAMAR EN TWITTER</a>
-        <a href="https://twitter.com" target="_blank" class="btn btn-twitter" data-lang="rom">LE KO TWITTER</a>
-    </div>
-
-    <div class="contract-box">
-        <small style="color:#888;">Official Base Contract Address</small><br>
-        <span>0x509b1F73666D3237c8AA074d9c0A394affd1a48C</span>
-    </div>
-
-    <!-- TUS ENLACES ORIGINALES (RESTABLECIDOS) --> 
-    <a href="https://t.me" target="_blank" class="btn btn-main" data-lang="en">JOIN TELEGRAM COMMUNITY</a>
-    <a href="https://t.me" target="_blank" class="btn btn-main" data-lang="es">ÚNETE A LA COMUNIDAD DE TELEGRAM</a>
-    <a href="https://t.me" target="_blank" class="btn btn-main" data-lang="rom">KHETANE KO TELEGRAM</a>
-
-    <a href="https://dexscreener.com" target="_blank" class="btn btn-dex" data-lang="en">📈 VIEW LIVE CHART</a>
-    <a href="https://dexscreener.com" target="_blank" class="btn btn-dex" data-lang="es">📈 VER GRÁFICA EN VIVO</a>
-
-    <a href="https://zora.co" target="_blank" class="btn btn-zora-profile" data-lang="en">💎 VIEW FULL ART GALLERY</a>
-    <a href="https://zora.co" target="_blank" class="btn btn-zora-profile" data-lang="es">💎 VER GALERÍA DE ARTE</a>
-
-    <div class="contact-section"> 
-        <a href="mailto:yahvehleyosif@gmail.com" class="contact-email">yahvehleyosif@gmail.com</a> 
-    </div> 
-    <footer> &copy; 2026 WORLD LOVE ALLIANCE </footer> 
+<!-- SECCIÓN AIRDROP -->
+<div class="airdrop-box">
+    <h3>🎁 Join the Airdrop</h3>
+    <p style="font-size: 0.9rem;">Follow <b>@WLAtoken</b> on Twitter & reply to the pinned post with your Base Wallet to get 50,000 WLA for free!</p>
+    <a href="https://twitter.com" target="_blank" class="btn btn-twitter">CLAIM ON TWITTER</a>
 </div>
 
-<script>
-function setLang(lang, event) {
-    document.querySelectorAll('[data-lang]').forEach(el => el.style.display = 'none');
-    document.querySelectorAll('[data-lang="' + lang + '"]').forEach(el => el.style.display = 'block');
-    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    if (event) event.currentTarget.classList.add('active');
-}
-</script>
-</body></html>
+<!-- SECCIÓN CONTRATO -->
+<div class="contract-box">
+    <small style="color:#888; text-transform:uppercase;">Official Base Contract Address</small><br>
+    <span>0x509b1F73666D3237c8AA074d9c0A394affd1a48C</span>
+</div>
+
+<!-- ENLACES PRINCIPALES --> <a href="https://t.me/WorldLoveAlliance" target="_blank" class="btn btn-main">JOIN TELEGRAM COMMUNITY</a> <a href="https://dexscreener.com/base/0x3563b0a234b8f3badc80e2494a003d9c30e79a4d" target="_blank" class="btn btn-dex">📈 VIEW LIVE CHART</a> <a href="https://zora.co/@wlatoken" target="_blank" class="btn btn-zora-profile">💎 VIEW FULL ART GALLERY</a> <!-- SECCIÓN DE CONTACTO PARA BASESCAN --> <div class="contact-section"> <h3 style="color:#d4af37; font-size:0.9rem; text-transform:uppercase;">Official Contact</h3> <a href="mailto:yahvehleyosif@gmail.com" class="contact-email">yahvehleyosif@gmail.com</a> </div> <footer> &copy; 2026 WORLD LOVE ALLIANCE<br> A Solo Journey for the ROM Nation. </footer> </div></body></html>
