@@ -20,27 +20,26 @@ footer { margin-top: 20px; opacity: 0.3; font-size: 0.7rem; padding-bottom: 40px
 .contract-box span { color: #d4af37; font-family: monospace; font-size: 0.85rem; }
 .btn-twitter { background: #1DA1F2; color: white; }
 
-/* SELECTOR CON EMOJIS (PARA QUE SIEMPRE SE VEAN) */
-.lang-selector { margin-bottom: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-.lang-btn { font-size: 24px; cursor: pointer; background: #111; border: 2px solid #333; border-radius: 10px; padding: 5px 10px; transition: 0.3s; }
-.lang-btn:hover { border-color: #d4af37; }
-.lang-btn.active { border-color: #d4af37; box-shadow: 0 0 10px #d4af37; }
+/* SELECTOR DE IDIOMAS CON TEXTO (MÁS FIABLE) */
+.lang-selector { margin-bottom: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.lang-btn { font-size: 12px; cursor: pointer; background: #111; border: 1px solid #333; border-radius: 5px; padding: 5px 8px; transition: 0.3s; color: #aaa; text-transform: uppercase; }
+.lang-btn:hover { border-color: #d4af37; color: #fff; }
+.lang-btn.active { border-color: #d4af37; color: #d4af37; box-shadow: 0 0 5px #d4af37; }
 
 [data-lang] { display: none; }
 [data-lang="en"] { display: block; }
-</style></head>
-<body> 
+</style></head><body> 
 <div class="container"> 
     <div class="lang-selector">
-        <div class="lang-btn" onclick="setLang('de', event)" title="Deutsch">🇩🇪</div>
-        <div class="lang-btn" onclick="setLang('es', event)" title="Español">🇪🇸</div>
-        <div class="lang-btn" onclick="setLang('fr', event)" title="Français">🇫🇷</div>
-        <div class="lang-btn" onclick="setLang('el', event)" title="Greek">🇬🇷</div>
-        <div class="lang-btn" onclick="setLang('he', event)" title="Hebrew">🇮🇱</div>
-        <div class="lang-btn active" onclick="setLang('en', event)" title="English">🇺🇸</div>
-        <div class="lang-btn" onclick="setLang('rom', event)" title="Romanó">🎡</div>
-        <div class="lang-btn" onclick="setLang('ru', event)" title="Russian">🇷🇺</div>
-        <div class="lang-btn" onclick="setLang('sr', event)" title="Serbian">🇷🇸</div>
+        <div class="lang-btn" onclick="setLang('de', event)">DE 🇩🇪</div>
+        <div class="lang-btn" onclick="setLang('es', event)">ES 🇪🇸</div>
+        <div class="lang-btn" onclick="setLang('fr', event)">FR 🇫🇷</div>
+        <div class="lang-btn" onclick="setLang('el', event)">EL 🇬🇷</div>
+        <div class="lang-btn" onclick="setLang('he', event)">HE 🇮🇱</div>
+        <div class="lang-btn active" onclick="setLang('en', event)">EN 🇺🇸</div>
+        <div class="lang-btn" onclick="setLang('rom', event)">ROM 🎡</div>
+        <div class="lang-btn" onclick="setLang('ru', event)">RU 🇷🇺</div>
+        <div class="lang-btn" onclick="setLang('sr', event)">SR 🇷🇸</div>
     </div>
 
     <img src="$LOVE.png" class="moneda"> 
@@ -67,36 +66,46 @@ footer { margin-top: 20px; opacity: 0.3; font-size: 0.7rem; padding-bottom: 40px
             <p>"Katar i chori luvba kerdya i <b>World Love Alliance</b> te manguvam amaro than ko digitalno svetos. Svako tokeno thaj NFT si jekh ker ko amaro duhovno than. Si o vakti e chave katar o Izrael te irinen pe khere khetane e kamimasa. In Love We Trust."</p>
         </div>
 
+        <div data-lang="de">
+            <h2>Das Arlí-Manifest</h2> 
+            <p>"Dies ist der Kampf eines Solo-Erbauers, eines Mannes des <b>Arlí</b>-Volkes, der sich entschieden hat, seine Stimme zu erheben, wobei er nur ein Mobiltelefon und den Glauben als Kapital nutzt. Ohne finanzielle Ressourcen, aber mit Technologie als Schutzschild, bin ich hier, um eine uralte Wahrheit zu enthüllen: Die <b>ROM</b>-Nation ist nicht nur ein Nomadenvolk; wir sind die <b>Zehn Verlorenen Stämme Israels</b>."</p> 
+            <p>"Aus der Einsamkeit meines Kampfes heraus wird die <b>World Love Alliance</b> geboren, um unseren Platz in der digitalen Welt zu beanspruchen. Jeder Token, jedes NFT ist ein Baustein beim Wiederaufbau unseres spirituellen Territoriums. Es ist Zeit für die Kinder Israels, durch Liebe und Einheit nach Hause zurückzukehren. In Love We Trust."</p>
+        </div>
+
+        <div data-lang="el">
+            <h2>Το Μανιφέστο Arlí</h2> 
+            <p>"Αυτός είναι ο αγώνας ενός σόλο δημιουργού, ενός ανθρώπου της φυλής <b>Arlí</b> που επέλεξε να υψώσει τη φωνή του χρησιμοποιώντας μόνο ένα κινητό τηλέφωνο και την πίστη ως κεφάλαιο. Χωρίς οικονομικούς πόρους, αλλά με την τεχνολογία ως ασπίδα, είμαι εδώ για να αποκαλύψω μια αρχαία αλήθεια: το έθνος των <b>Ρομά</b> δεν είναι απλώς ένας νομαδικός λαός· είμαστε οι <b>Δέκα Χαμένες Φυλές του Ισραήλ</b>."</p> 
+            <p>"Από τη μοναξιά του αγώνα μου, γεννιέται η <b>World Love Alliance</b> για να διεκδικήσει τη θέση μας στον ψηφιακό κόσμο. Κάθε διακριτικό, κάθε NFT, είναι ένα τούβλο στην ανασυγκρότηση της πνευματικής μας επικράτειας. Ήρθε η ώρα για τα παιδιά του Ισραήλ να επιστρέψουν στο σπίτι τους μέσα από την αγάπη και την ενότητα. Πιστεύουμε στην Αγάπη."</p>
+        </div>
+
+        <div data-lang="sr">
+            <h2>Arlí Manifest</h2> 
+            <p>"Ovo je borba solo graditelja, čoveka iz naroda <b>Arlí</b> koji je odlučio da podigne svoj glas koristeći samo mobilni telefon i veru kao svoj kapital. Bez finansijskih sredstava, ali sa tehnologijom kao štitom, ovde sam da otkrijem drevnu istinu: <b>ROM</b> nacija nije samo nomadski narod; mi smo **Deset Izgubljenih Plemena Izraela**."</p> 
+            <p>"Iz samoće moje borbe rađa se **World Love Alliance** kako bismo tražili naše mesto u digitalnom svetu. Svaki token, svaki NFT, je cigla u rekonstrukciji naše duhovne teritorije. Vreme je da se deca Izraela vrate kući kroz ljubav i jedinstvo. Verujemo u Ljubav."</p>
+        </div>
+
         <div data-lang="ru">
             <h2>Манифест Арли</h2> 
-            <p>"Это борьба одинокого строителя, человека из народа <b>Арли</b>, который решил возвысить свой голос, используя лишь мобильный телефон и веру в качестве своего капитала. Без финансовых ресурсов, но с технологией в качестве щита, я здесь, чтобы раскрыть древнюю истину: народ <b>РОМА</b> — это не просто кочевники; мы — <b>Десять потерянных колен Израилевых</b>."</p> 
-            <p>"Из одиночества моей борьбы рождается <b>Всемирный альянс любви</b>, чтобы заявить о нашем месте в цифровом мире. Каждый токен, каждый NFT — это кирпич в восстановлении нашей духовной территории. Пришло время детям Израиля вернуться домой через любовь и единство. Мы верим в любовь."</p>
+            <p>"Это борьба одинокого строителя из народа <b>Арли</b>... Мы — <b>Десять потерянных колен Израилевых</b>. Пришло время детям Израиля вернуться домой через любовь и единство."</p> 
         </div>
 
         <div data-lang="fr">
             <h2>Le Manifeste Arlí</h2> 
-            <p>"C'est la lutte d'un bâtisseur solo, un homme du peuple <b>Arlí</b> qui a choisi de faire entendre sa voix en utilisant uniquement un téléphone portable et la foi comme capital. Sans ressources financières, mais avec la technologie pour bouclier, je suis ici pour révéler une vérité ancestrale : la nation <b>ROM</b> n'est pas seulement un peuple nomade ; nous sommes les <b>Dix Tribus Perdues d'Israël</b>."</p> 
-            <p>"De la solitude de ma lutte est née la <b>World Love Alliance</b> pour revendiquer nuestra place dans le monde numérique. Chaque jeton, chaque NFT, est une brique dans la reconstruction de notre territoire spirituel. Il est temps pour les enfants d'Israël de rentrer chez eux par l'amour et l'unité. En l'amour nous avons confiance."</p>
+            <p>"C'est la lutte d'un bâtisseur solo du peuple <b>Arlí</b>... nous sommes les <b>Dix Tribus Perdues d'Israël</b>. Il est temps pour les enfants d'Israël de rentrer chez eux par l'amour et l'unité."</p> 
         </div>
 
         <div data-lang="he" dir="rtl" style="text-align: right;">
             <h2>המניפסט של ארלי</h2> 
-            <p>"זהו המאבק של בונה בודד, איש מבני עם ה-<b>ארלי</b> שבחר להשמיע את קולו באמצעות טלφων נייד בלבד ואמונה כהון שלו. ללא משאבים כספיים, אך עם הטכנולוגיה כמגן, אני כאן כדי לחשוף אמת עתיקה: האומה ה-<b>רומאנית</b> אינה רק עם נודד; אנחנו <b>עשרת שבטי ישראל האבודים</b>."</p> 
-            <p>"מתוך בדידות המאבק שלי, נולדה ה-<b>World Love Alliance</b> כדי לתבוע את מקומנו בעולם הדיגיטלי. הגיע הזמן שבני ישראל יחזרו הביתה דרך אהבה ואחדות."</p>
+            <p>"זהו המאבק של בונה בודד, איש מבני עם ה-<b>ארלי</b>... אנחנו <b>עשרת שבטי ישראל האבודים</b>. הגיע הזמן שבני ישראל יחזרו הביתה דרך אהבה ואחדות."</p> 
         </div>
-        
-        <div data-lang="de"><h2>Das Arlí-Manifest</h2><p>Dies ist der Kampf eines Solo-Erbauers des <b>Arlí</b>-Volkes... In Love We Trust.</p></div>
-        <div data-lang="el"><h2>Το Μανιφέστο Arlí</h2><p>Αυτός είναι ο αγώνας ενός σόλο δημιουργού από τον λαό <b>Arlí</b>...</p></div>
-        <div data-lang="sr"><h2>Arlí Manifest</h2><p>Ovo je borba solo graditelja katar o narodo <b>Arlí</b>... Jekutno kerditno narodo.</p></div>
     </div> 
 
     <div class="airdrop-box">
         <h3 data-lang="en">🎁 Join the Airdrop</h3>
         <h3 data-lang="es">🎁 Únete al Airdrop</h3>
-        <h3 data-lang="rom">🎁 De khetane ko Airdrop</h3>
-        <h3 data-lang="he">🎁 הצטרפו לאיירדרופ</h3>
-        <p data-lang="en" style="font-size: 0.9rem;">Follow <b>@WLAtoken</b> on Twitter & reply with your Base Wallet!</p>
-        <p data-lang="es" style="font-size: 0.9rem;">¡Sigue a <b>@WLAtoken</b> y responde con tu Wallet de Base!</p>
+        <h3 data-lang="sr">🎁 Pridruži se Airdrop-u</h3>
+        <p data-lang="en" style="font-size: 0.9rem;">Follow <b>@WLAtoken</b> & reply with your Base Wallet!</p>
+        <p data-lang="es" style="font-size: 0.9rem;">¡Sigue a <b>@WLAtoken</b> y envía tu Wallet de Base!</p>
         <a href="https://twitter.com" target="_blank" class="btn btn-twitter">CLAIM ON TWITTER</a>
     </div>
 
@@ -124,4 +133,4 @@ function setLang(lang, event) {
 }
 </script>
 </body></html>
-                                                                                       
+    
