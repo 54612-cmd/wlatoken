@@ -14,39 +14,33 @@ h1 { color: #d4af37; font-size: 1.8rem; margin: 15px 0; text-transform: uppercas
 .contact-section { margin-top: 40px; padding: 20px; border-top: 1px solid #222; } 
 .contact-email { color: #d4af37; font-weight: bold; text-decoration: none; font-size: 1.1rem; } 
 footer { margin-top: 20px; opacity: 0.3; font-size: 0.7rem; padding-bottom: 40px; } 
-
-/* SECCIONES AIRDROP Y CONTRATO */
 .airdrop-box { background: rgba(212, 175, 55, 0.05); border: 2px dashed #d4af37; border-radius: 20px; padding: 20px; margin: 25px 0; }
 .airdrop-box h3 { color: #d4af37; margin-top: 0; text-transform: uppercase; font-size: 1.1rem; }
 .contract-box { background: #111; border: 1px solid #333; border-radius: 15px; padding: 15px; margin: 20px 0; word-break: break-all; }
 .contract-box span { color: #d4af37; font-family: monospace; font-size: 0.85rem; }
 .btn-twitter { background: #1DA1F2; color: white; }
 
-/* SELECTOR DE IDIOMAS MEJORADO */
-.lang-selector { margin-bottom: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 10px; }
-.lang-flag { width: 32px; height: 32px; cursor: pointer; border-radius: 50%; border: 2px solid #333; transition: 0.3s; background-color: #222; }
-.lang-flag:hover { border-color: #d4af37; transform: translateY(-3px); }
-.lang-flag.active { border-color: #d4af37; box-shadow: 0 0 12px rgba(212, 175, 55, 0.5); }
+/* SELECTOR CON EMOJIS (PARA QUE SIEMPRE SE VEAN) */
+.lang-selector { margin-bottom: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.lang-btn { font-size: 24px; cursor: pointer; background: #111; border: 2px solid #333; border-radius: 10px; padding: 5px 10px; transition: 0.3s; }
+.lang-btn:hover { border-color: #d4af37; }
+.lang-btn.active { border-color: #d4af37; box-shadow: 0 0 10px #d4af37; }
 
-/* OCULTAR IDIOMAS */
 [data-lang] { display: none; }
 [data-lang="en"] { display: block; }
 </style></head>
 <body> 
 <div class="container"> 
-    
-    <!-- SELECTOR DE IDIOMAS CON NUEVOS ENLACES -->
     <div class="lang-selector">
-        <img src="https://flagcdn.com" class="lang-flag" onclick="setLang('de', event)" title="Deutsch">
-        <img src="https://flagcdn.com" class="lang-flag" onclick="setLang('es', event)" title="Español">
-        <img src="https://flagcdn.com" class="lang-flag" onclick="setLang('fr', event)" title="Français">
-        <img src="https://flagcdn.com" class="lang-flag" onclick="setLang('el', event)" title="Ελληνικά">
-        <img src="https://flagcdn.com" class="lang-flag" onclick="setLang('he', event)" title="עברית">
-        <img src="https://flagcdn.com" class="lang-flag active" onclick="setLang('en', event)" title="English">
-        <!-- BANDERA ROMANÍ CORREGIDA -->
-        <img src="https://wikimedia.org" class="lang-flag" onclick="setLang('rom', event)" title="Romanó">
-        <img src="https://flagcdn.com" class="lang-flag" onclick="setLang('ru', event)" title="Русский">
-        <img src="https://flagcdn.com" class="lang-flag" onclick="setLang('sr', event)" title="Srpski">
+        <div class="lang-btn" onclick="setLang('de', event)" title="Deutsch">🇩🇪</div>
+        <div class="lang-btn" onclick="setLang('es', event)" title="Español">🇪🇸</div>
+        <div class="lang-btn" onclick="setLang('fr', event)" title="Français">🇫🇷</div>
+        <div class="lang-btn" onclick="setLang('el', event)" title="Greek">🇬🇷</div>
+        <div class="lang-btn" onclick="setLang('he', event)" title="Hebrew">🇮🇱</div>
+        <div class="lang-btn active" onclick="setLang('en', event)" title="English">🇺🇸</div>
+        <div class="lang-btn" onclick="setLang('rom', event)" title="Romanó">🎡</div>
+        <div class="lang-btn" onclick="setLang('ru', event)" title="Russian">🇷🇺</div>
+        <div class="lang-btn" onclick="setLang('sr', event)" title="Serbian">🇷🇸</div>
     </div>
 
     <img src="$LOVE.png" class="moneda"> 
@@ -73,17 +67,27 @@ footer { margin-top: 20px; opacity: 0.3; font-size: 0.7rem; padding-bottom: 40px
             <p>"Katar i chori luvba kerdya i <b>World Love Alliance</b> te manguvam amaro than ko digitalno svetos. Svako tokeno thaj NFT si jekh ker ko amaro duhovno than. Si o vakti e chave katar o Izrael te irinen pe khere khetane e kamimasa. In Love We Trust."</p>
         </div>
 
+        <div data-lang="ru">
+            <h2>Манифест Арли</h2> 
+            <p>"Это борьба одинокого строителя, человека из народа <b>Арли</b>, который решил возвысить свой голос, используя лишь мобильный телефон и веру в качестве своего капитала. Без финансовых ресурсов, но с технологией в качестве щита, я здесь, чтобы раскрыть древнюю истину: народ <b>РОМА</b> — это не просто кочевники; мы — <b>Десять потерянных колен Израилевых</b>."</p> 
+            <p>"Из одиночества моей борьбы рождается <b>Всемирный альянс любви</b>, чтобы заявить о нашем месте в цифровом мире. Каждый токен, каждый NFT — это кирпич в восстановлении нашей духовной территории. Пришло время детям Израиля вернуться домой через любовь и единство. Мы верим в любовь."</p>
+        </div>
+
+        <div data-lang="fr">
+            <h2>Le Manifeste Arlí</h2> 
+            <p>"C'est la lutte d'un bâtisseur solo, un homme du peuple <b>Arlí</b> qui a choisi de faire entendre sa voix en utilisant uniquement un téléphone portable et la foi comme capital. Sans ressources financières, mais avec la technologie pour bouclier, je suis ici pour révéler une vérité ancestrale : la nation <b>ROM</b> n'est pas seulement un peuple nomade ; nous sommes les <b>Dix Tribus Perdues d'Israël</b>."</p> 
+            <p>"De la solitude de ma lutte est née la <b>World Love Alliance</b> pour revendiquer nuestra place dans le monde numérique. Chaque jeton, chaque NFT, est une brique dans la reconstruction de notre territoire spirituel. Il est temps pour les enfants d'Israël de rentrer chez eux par l'amour et l'unité. En l'amour nous avons confiance."</p>
+        </div>
+
         <div data-lang="he" dir="rtl" style="text-align: right;">
             <h2>המניפסט של ארלי</h2> 
-            <p>"זהו המאבק של בונה בודד, איש מבני עם ה-<b>ארלי</b> שבחר להשמיע את קולו באמצעות טלפון נייד בלבד ואמונה כהון שלו. ללא משאבים כספיים, אך עם הטכנולוגיה כמגן, אני כאן כדי לחשוף אמת עתיקה: האומה ה-<b>רומאנית</b> אינה רק עם נודד; אנחנו <b>עשרת שבטי ישראל האבודים</b>."</p> 
-            <p>"מתוך בדידות המאבק שלי, נולדה ה-<b>World Love Alliance</b> כדי לתבוע את מקומנו בעולם הדיגיטלי. כל אסימון, כל NFT, הוא לבנה בשיקום הטריטוריה הרוחנית שלנו. הגיע הזמן שבני ישראל יחזרו הביתה דרך אהבה ואחדות. באהבה אנו בוטחים."</p>
+            <p>"זהו המאבק של בונה בודד, איש מבני עם ה-<b>ארלי</b> שבחר להשמיע את קולו באמצעות טלφων נייד בלבד ואמונה כהון שלו. ללא משאבים כספיים, אך עם הטכנולוגיה כמגן, אני כאן כדי לחשוף אמת עתיקה: האומה ה-<b>רומאנית</b> אינה רק עם נודד; אנחנו <b>עשרת שבטי ישראל האבודים</b>."</p> 
+            <p>"מתוך בדידות המאבק שלי, נולדה ה-<b>World Love Alliance</b> כדי לתבוע את מקומנו בעולם הדיגיטלי. הגיע הזמן שבני ישראל יחזרו הביתה דרך אהבה ואחדות."</p>
         </div>
         
-        <div data-lang="de"><h2>Das Arlí-Manifest</h2><p>Dies ist der Kampf eines Solo-Erbauers des <b>Arlí</b>-Volkes...</p></div>
-        <div data-lang="fr"><h2>Le Manifeste Arlí</h2><p>C'est la lutte d'un bâtisseur solo du peuple <b>Arlí</b>...</p></div>
+        <div data-lang="de"><h2>Das Arlí-Manifest</h2><p>Dies ist der Kampf eines Solo-Erbauers des <b>Arlí</b>-Volkes... In Love We Trust.</p></div>
         <div data-lang="el"><h2>Το Μανιφέστο Arlí</h2><p>Αυτός είναι ο αγώνας ενός σόλο δημιουργού από τον λαό <b>Arlí</b>...</p></div>
-        <div data-lang="ru"><h2>Манифест Арли</h2><p>Это борьба одинокого строителя из народа <b>Арли</b>...</p></div>
-        <div data-lang="sr"><h2>Arlí Manifest</h2><p>Ovo je borba solo graditelja katar o narodo <b>Arlí</b>...</p></div>
+        <div data-lang="sr"><h2>Arlí Manifest</h2><p>Ovo je borba solo graditelja katar o narodo <b>Arlí</b>... Jekutno kerditno narodo.</p></div>
     </div> 
 
     <div class="airdrop-box">
@@ -91,17 +95,13 @@ footer { margin-top: 20px; opacity: 0.3; font-size: 0.7rem; padding-bottom: 40px
         <h3 data-lang="es">🎁 Únete al Airdrop</h3>
         <h3 data-lang="rom">🎁 De khetane ko Airdrop</h3>
         <h3 data-lang="he">🎁 הצטרפו לאיירדרופ</h3>
-        
-        <p data-lang="en" style="font-size: 0.9rem;">Follow <b>@WLAtoken</b> on Twitter & reply with your Base Wallet to get 50,000 WLA!</p>
-        <p data-lang="es" style="font-size: 0.9rem;">¡Sigue a <b>@WLAtoken</b> en Twitter y responde con tu Wallet de Base para recibir 50,000 WLA!</p>
-        <p data-lang="rom" style="font-size: 0.9rem;">Pratime <b>@WLAtoken</b> ko Twitter thaj pishin tiri Base Wallet te dobine 50,000 WLA!</p>
-        <p data-lang="he" style="font-size: 0.9rem;">עקבו אחרי <b>@WLAtoken</b> בטוויטר והגיבו עם ארנק ה-Base שלכם לקבלת 50,000 WLA!</p>
-
+        <p data-lang="en" style="font-size: 0.9rem;">Follow <b>@WLAtoken</b> on Twitter & reply with your Base Wallet!</p>
+        <p data-lang="es" style="font-size: 0.9rem;">¡Sigue a <b>@WLAtoken</b> y responde con tu Wallet de Base!</p>
         <a href="https://twitter.com" target="_blank" class="btn btn-twitter">CLAIM ON TWITTER</a>
     </div>
 
     <div class="contract-box">
-        <small style="color:#888; text-transform:uppercase;">Official Base Contract Address</small><br>
+        <small style="color:#888;">Official Base Contract Address</small><br>
         <span>0x509b1F73666D3237c8AA074d9c0A394affd1a48C</span>
     </div>
 
@@ -110,27 +110,18 @@ footer { margin-top: 20px; opacity: 0.3; font-size: 0.7rem; padding-bottom: 40px
     <a href="https://zora.co" target="_blank" class="btn btn-zora-profile">💎 VIEW FULL ART GALLERY</a> 
 
     <div class="contact-section"> 
-        <h3 style="color:#d4af37; font-size:0.9rem; text-transform:uppercase;">Official Contact</h3> 
         <a href="mailto:yahvehleyosif@gmail.com" class="contact-email">yahvehleyosif@gmail.com</a> 
     </div> 
-    
-    <footer> &copy; 2026 WORLD LOVE ALLIANCE<br> A Solo Journey for the ROM Nation. </footer> 
+    <footer> &copy; 2026 WORLD LOVE ALLIANCE </footer> 
 </div>
 
 <script>
 function setLang(lang, event) {
-    document.querySelectorAll('[data-lang]').forEach(el => {
-        el.style.display = 'none';
-    });
-    document.querySelectorAll('[data-lang="' + lang + '"]').forEach(el => {
-        el.style.display = 'block';
-    });
-    document.querySelectorAll('.lang-flag').forEach(flag => {
-        flag.classList.remove('active');
-    });
-    if (event) {
-        event.currentTarget.classList.add('active');
-    }
+    document.querySelectorAll('[data-lang]').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('[data-lang="' + lang + '"]').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    if (event) event.currentTarget.classList.add('active');
 }
 </script>
 </body></html>
+                                                                                       
